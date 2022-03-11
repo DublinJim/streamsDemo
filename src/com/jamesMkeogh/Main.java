@@ -9,9 +9,30 @@ public class Main {
 
         List<Student> students = new ArrayList<>();
 
-        students.add(new Student("Bill", 56));
-        students.add(new Student("Bob", 46));
-        students.add(new Student("John", 5));
-        students.add(new Student("Paddy", 76));
+        students.add(new Student("Bill", 156));
+        students.add(new Student("Bob", 436));
+        students.add(new Student("John", 52));
+        students.add(new Student("Paddy", 176));
+        List<Student> over100 = new ArrayList<>();
+        System.out.println("-------------all students -----------");
+        for (Student value : students) {
+            System.out.println(value);
+        }
+
+        for (Student i : students) {
+            if (i.iq >= 100) {
+                over100.add(i);
+
+            }
+        }
+        System.out.println("------------smart folks-------------");
+        for (Student student : over100) {
+            System.out.println(student);
+
+        }
+
     }
 }
+
+
+
